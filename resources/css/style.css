@@ -1,6 +1,6 @@
 html {
-  font-size: 18px;
   background-color: white;
+  font-size: 18px;
 }
 
 body {
@@ -8,9 +8,42 @@ body {
   color: white;
 }
 
-.container {
+header {
   background-color: black;
+}
+
+header .container {
   display: flex;
   align-items: center;
   padding: 12px 0.5em;
+}
+
+header img {
+  padding-right: 15px;
+  height: 1.5em;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.banner {
+  background: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25em;
+}
+
+.headline {
+  background: black;
+  width: 20em;
+  padding: 2em 3em;
+  position: relative;
+  top: 9em;
+}
+
+h1, h4 {
+  font-weight: bold;
 }
