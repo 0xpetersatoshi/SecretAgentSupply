@@ -6,6 +6,7 @@ html {
 body {
   font-family: Helvetica, sans-serif;
   color: white;
+  line-height: 1.4em;
 }
 
 header {
@@ -46,4 +47,75 @@ header img {
 
 h1, h4 {
   font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  margin: 0.25em 0;
+}
+
+H4 {
+  margin: 1.33em 0;
+}
+
+nav {
+  background: firebrick;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.products,
+.business-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0 0 0;
+}
+
+.product {
+  width: 30%;
+}
+
+.product-image {
+  border: 4px solid black;
+  padding: 2em 0;
+  height: 9em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  max-width: 8em;
+}
+
+.description {
+  background: black;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.title {
+  background: black;
+  padding: 1em 2em;
+}
+
+.business-info p {
+  color: black;
+}
+
+footer {
+  background: black;
+  padding: 5em 0;
+  margin-top: 4em;
 }
