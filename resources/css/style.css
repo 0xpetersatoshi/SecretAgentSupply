@@ -75,6 +75,10 @@ a {
   text-decoration: none;
 }
 
+.mobile {
+  display: none;
+}
+
 .products,
 .business-info {
   display: flex;
@@ -105,6 +109,10 @@ a {
   padding: 0.5em;
 }
 
+.info {
+  width: 35%;
+}
+
 .title {
   background: black;
   padding: 1em 2em;
@@ -118,4 +126,77 @@ footer {
   background: black;
   padding: 5em 0;
   margin-top: 4em;
+}
+
+@media only screen and (max-width: 1024px) {
+  .product {
+    width: 47%;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75em;
+    text-align: center;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+  .banner {
+    height: 15em;
+  }
+
+  .headline {
+    width: 100%;
+    top: 10em;
+    padding: 1em 2em;
+    position: relative;
+  }
+
+  .headline h4 {
+    font-size: 0.77em;
+  }
+
+  .headline h1 {
+    font-size: 1em;
+  }
+
+  h1, h4 {
+    font-weight: bold;
+  }
+
+  .glasses,
+  .watch {
+    display: none;
+  }
+
+  .product,
+  .info {
+    width: 90%;
+    margin: 0.5em auto;
+  }
+
+  footer .container {
+    text-align: center;
+  }
+
+  .products,
+  .business-info {
+    flex-wrap: wrap;
+  }
+
 }
